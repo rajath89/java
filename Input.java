@@ -13,6 +13,13 @@ String name=scanner.nextLine();
 
 System.out.println(name);
 
+int x=scanner.nextInt(); //getting int input
+
+System.out.println(x);
+
+//scanner.nextBoolean() , scanner.nextFloat() ,scanner.nextDouble() , scanner.nextByte() 
+
+
 }
 
 }
