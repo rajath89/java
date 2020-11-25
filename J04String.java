@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+
+//https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#String(byte[],%20java.nio.charset.Charset)
+
 public class J04String{
 
 public static void main(String args[]){
@@ -35,6 +38,29 @@ System.out.println(h.repeat(100));
 
 //equals
 System.out.println(h.equals(form));
+
+//getBytes : Encodes this String into a sequence of bytes using the platform's default charset, storing the result into a new byte array.
+System.out.println(h.getBytes());
+
+//hashcode
+/*
+
+Returns a hash code for this string. The hash code for a String object is computed as
+ s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]
+ 
+using int arithmetic, where s[i] is the ith character of the string, n is the length of the string, and ^ indicates exponentiation. (The hash value of the empty string is zero.)
+
+*/
+System.out.println(h.hashCode());
+
+
+//replace
+String rep="hello world";
+String rep2=rep.replace("world", "java");
+System.out.println(rep2);
+
+
+
 
 }
 
