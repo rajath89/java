@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DataTypes{
+public class J03DataTypes{
 
 
 public static final double PI=3.14; //declaring global const
@@ -25,6 +25,17 @@ int cast= (int) scanner.nextDouble(); //type casting
 System.out.println(cast);
 
 System.out.println(Integer.MAX_VALUE);
+
+System.out.println(Integer.max(10,20));
+System.out.println(Integer.compare(10,20));; //.compare(x,y)  -1->x<y,1->x>y,0->x==y
+
+
+//convert string to int
+String str="100";
+int a = Integer.parseInt(str);
+System.out.println(a);
+
+
 }
 
 }
