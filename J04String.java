@@ -3,6 +3,30 @@ import java.util.Scanner;
 
 //https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#String(byte[],%20java.nio.charset.Charset)
 
+//https://www.w3schools.com/java/java_ref_string.asp
+
+/*
+charAt
+length
+format
+concat
+contains
+indexOf
+toUppercase
+toLowercase
+substring
+repeat
+equals
+getBytes
+hashCode
+replace
+getChars
+toCharArray
+split
+copyValueOf
+
+*/
+
 public class J04String{
 
 public static void main(String args[]){
@@ -61,6 +85,36 @@ System.out.println(rep2);
 
 
 
+//convert string to character array
+String gstr="hello";
+char[] array = new char[gstr.length()];
+gstr.getChars(0, gstr.length()-1, array,0);
+
+for(char ch:array){
+    System.out.println(ch);
+}
+
+//or
+
+char[] array2=gstr.toCharArray();
+for(char ch2:array2){
+    System.out.println(ch2);
+}
+
+
+//split string based on space between words
+String sp="hello world";
+String[] arr=sp.split(" ");
+for(String ar:arr)
+    System.out.println(ar);
+
+
+
+//copyValueOf()
+char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
+String myStr2 = "";
+myStr2 = String.copyValueOf(myStr1, 0, 5);
+System.out.println("Returned String: " + myStr2);
 
 }
 
