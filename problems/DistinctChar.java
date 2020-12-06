@@ -3,11 +3,13 @@ import java.util.Scanner;
 class RetVal{
     int h;
     String ch;
+    
 
     RetVal(int h,String ch)
     {
         this.h=h;
         this.ch=ch;
+        
     }
 }
 
@@ -64,5 +66,41 @@ public class DistinctChar {
 
        
         p(distinctChar(str).h+distinctChar(str).ch);
+
+       
+
+
+        if(distinctChar(str).h==-1){
+            if(str.length()%2==0){
+                p("CHAT WITH HER!");
+               
+            }
+            else{
+                p("IGNORE HIM!");
+            }
+        }else if(distinctChar(str).h==1){
+            // if(str.length()-distinctChar(str).cn%2==0){
+            //     p("IGNORE HIM");
+            // }else{
+            //     p("CHAT WITH HER!");
+            // } 
+            int ct=0;
+            char[] s=distinctChar(str).ch.toCharArray();
+            for(char st:str.toCharArray()){
+
+                for(char st2:s){
+                    if(st==st2){
+                        ct=ct+1;
+                    }
+                }
+            }
+
+                        if(Math.abs(str.length()-ct)%2==0){
+                            p("CHAT WITH HER!");
+            }else{
+                p("IGNORE HIM");
+                
+            } 
+        }
     }
 }
