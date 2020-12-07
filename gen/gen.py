@@ -21,7 +21,7 @@ public class"""+" "+name+"""{
 		p.write(str)
 	return "File created"
 def info():
-	print("cmd tool to generate java template file")
+	print("cmd tool to generate java template file!!")
  
 
 def main():
