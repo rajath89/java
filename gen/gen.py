@@ -2,6 +2,8 @@ import fire
 
 def mkfile(name):
 	str="""
+import java.util.Scanner;
+
 public class"""+" "+name+"""{
 
 
@@ -10,7 +12,7 @@ public class"""+" "+name+"""{
 	}
 
 	public static void main(String[] args){
-
+		Scanner sc=new Scanner(System.in);
 	}
 }
 	"""
